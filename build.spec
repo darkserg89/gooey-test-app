@@ -5,8 +5,8 @@ gooey_root = os.path.dirname(gooey.__file__)
 gooey_languages = Tree(os.path.join(gooey_root, 'languages'), prefix = 'gooey/languages')
 gooey_images = Tree(os.path.join(gooey_root, 'images'), prefix = 'gooey/images')
 
-a = Analysis(['YOUR_APP.py'],
-             pathex=['c:\\Python27\\Scripts'],
+a = Analysis(['app.py'],
+             pathex=['C:\\Users\\afanse\\PycharmProjects\\helloApp\\venv\\scripts\\python.exe'],
              hiddenimports=[],
              hookspath=None,
              runtime_hooks=None,
@@ -23,7 +23,7 @@ exe = EXE(pyz,
           options,
           gooey_languages, # Add them in to collected files
           gooey_images, # Same here.
-          name='CHANGE_ME',
+          name='helloApp',
           debug=False,
           strip=None,
           upx=True,
